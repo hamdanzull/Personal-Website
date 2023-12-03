@@ -41,10 +41,9 @@ menuToggle.addEventListener('click', function () {
 });
 
 
-// animate hero section
+// animate home section
 const profileImg = document.querySelector('.home-content .profile-img');
 const homeText = document.querySelector('.home-content .text-content');
-// const p = document.querySelector('.');
 
 window.addEventListener('DOMContentLoaded', (e) => {
     profileImg.style.opacity = '1';
@@ -58,6 +57,23 @@ window.addEventListener('DOMContentLoaded', (e) => {
     //     profileImg.style.transform = 'translateY(0)';
     // }
     // setTimeout(fadeInElement, 500);
+
+    const url = 'https://counterpro.vercel.app/api/count/?id=hamdanzull-portfolio';
+    const visits = document.getElementById('visits')
+
+    // Get visitor counts
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                // console.log(response);
+                visits.innerText = response.count;
+            }
+        }
+    };
+    xhr.send();
 });
 
 
@@ -82,12 +98,20 @@ window.addEventListener('DOMContentLoaded', (e) => {
 //     });
 // });
 
-// Ambil semua elemen menu
+
+// get all element menu
 const menuItems = document.querySelectorAll('.menu a');
+
+// auto close menu
+menuItems.forEach(item => {
+    item.addEventListener('click', function () {
+        menuToggle.click()
+    });
+});
 
 // Buat fungsi untuk menangani perubahan warna saat scroll
 function changeColorOnScroll() {
-    const sections = document.querySelectorAll('section'); // Ganti 'section' dengan elemen yang sesuai
+    const sections = document.querySelectorAll('section');
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -106,10 +130,8 @@ function changeColorOnScroll() {
     });
 }
 
-// Tambahkan event listener 'scroll'
 window.addEventListener('scroll', changeColorOnScroll);
 
-// Panggil fungsi 'changeColorOnScroll' untuk mengatur warna menu saat halaman dimuat
 changeColorOnScroll();
 
 

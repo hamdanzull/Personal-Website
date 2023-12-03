@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Personal Website</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/8f34827ea9.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -16,7 +20,7 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">
+            <a href="https://hamdanzull.vercel.app/" class="logo">
                 <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.0547 18.7313C18.1594 16.5422 16.0078 15 13.5 15H10.5C7.99219 15 5.84063 16.5422 4.94531 18.7313C3.27656 16.9781 2.25 14.6109 2.25 12C2.25 6.61406 6.61406 2.25 12 2.25C17.3859 2.25 21.75 6.61406 21.75 12C21.75 14.6109 20.7234 16.9781 19.0547 18.7313ZM17.175 20.2641C15.675 21.2062 13.9031 21.75 12 21.75C10.0969 21.75 8.325 21.2062 6.82031 20.2641C7.1625 18.5437 8.68125 17.25 10.5 17.25H13.5C15.3187 17.25 16.8375 18.5437 17.1797 20.2641H17.175ZM12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0C8.8174 0 5.76516 1.26428 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24Z"
@@ -113,11 +117,14 @@
 
 
     <section id="about">
-        <div class="gradient1 circle"></div>
-        <div class="gradient2 circle"></div>
+        <div class="gradient1 circle" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+            data-aos-mirror="true"></div>
+        <div class="gradient2 circle" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000"
+            data-aos-mirror="true"></div>
         <div class="about-content">
             <div class="container">
-                <div class="about-me">
+                <div class="about-me" data-aos="zoom-in-right" data-aos-offset="200" data-aos-duration="1500"
+                    data-aos-mirror="true">
                     <h1>About me</h1>
                     <span class="line"></span>
                     <!-- <p>Hi, I'm Muhammad Hamdan Zulfa! I'm a 19-year-old student at AMIKOM University in Yogyakarta,
@@ -135,20 +142,25 @@
                         and making my mark in the
                         ever-evolving web world. 🚀</p> -->
 
-                    <p>Hi everyone, I'm Muhammad Hamdan Zulfa, a 20-year-old Frontend Web Developer and a student at
+                    <p class="paragraph">Hi everyone, I'm Muhammad Hamdan Zulfa, a 20-year-old Frontend Web Developer
+                        and a student at
                         AMIKOM University based in Yogyakarta, Indonesia. Every day, I'm immersed in writing lines of
                         code. Bugs and errors seem to be my constant companions.</p>
-                    <p>I'm always curious to learn something new, especially in web technology and design. I fall in
+                    <p class="paragraph">I'm always curious to learn something new, especially in web technology and
+                        design. I fall in
                         love with JavaScript and TypeScript. Not just coding, I also took care of what I wrote. Writing
                         clean code and make me comfortable.</p>
-                    <a class="download-cv" href="http://" target="_blank">
+                    <a class="download-cv"
+                        href="https://drive.google.com/file/d/1LFu9Mw-heYgRglt8SaU5qxxGGZjxJm4T/view?usp=sharing"
+                        target="_blank">
                         <div>
                             <p>Download CV</p>
                             <i class="fa-solid fa-download"></i>
                         </div>
                     </a>
                 </div>
-                <div class="stack">
+                <div class="stack" data-aos="zoom-in-left" data-aos-offset="200" data-aos-duration="1500"
+                    data-aos-mirror="true">
                     <h1>Tech Stack</h1>
                     <span class="line"></span>
                     <div class="tech-container">
@@ -247,15 +259,99 @@
     </section>
 
     <section id="services">
-        <h1>Services</h1>
+        <div class="container">
+            <h1 data-aos="fade-down" data-aos-offset="100" data-aos-duration="1500" data-aos-mirror="true">Services
+            </h1>
+            <div class="services-container">
+                <div class="line"></div>
+                <div class="services-content" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500"
+                    data-aos-mirror="true">
+                    <div class="instalasi service text-r">
+                        <i class="fa-solid fa-screwdriver-wrench icon-l"></i>
+                        <div class="text">
+                            <p class="title">Installation Services</p>
+                            <p>Offering hardware and software installation (Operating Systems), applications, games, and
+                                network infrastructure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-content" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500"
+                    data-aos-mirror="true">
+                    <div class="instalasi service text-l">
+                        <div class="text">
+                            <p class="title">Web Development</p>
+                            <p>Crafting personalized portfolio websites, institutional sites, online stores
+                                (E-commerce), academic projects, and more.</p>
+                        </div>
+                        <i class="fa-solid fa-display icon-r"></i>
+                    </div>
+                </div>
+                <div class="services-content" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500"
+                    data-aos-mirror="true">
+                    <div class="instalasi service text-r">
+                        <i class="fa-solid fa-pen-nib icon-l"></i>
+                        <div class="text">
+                            <p class="title">Design</p>
+                            <p>Creating website or app designs & prototypes, brand logos, product designs, mockups,
+                                advertisements and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-content" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500"
+                    data-aos-mirror="true">
+                    <div class="instalasi service text-l">
+                        <div class="text">
+                            <p class="title">Automation</p>
+                            <p>Providing Telegram & WhatsApp BOT services to enhance online business services, utilizing
+                                Chromium for data scraping, and more.</p>
+                        </div>
+                        <i class="fa-brands fa-bots icon-r"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact"></section>
-
+    <section id="contact">
+        <div class="gradient1 circle" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000"></div>
+        <div class="gradient2 circle" data-aos="fade-down" data-aos-offset="50" data-aos-duration="1000"></div>
+        <div class="container">
+            <div class="form-container" data-aos="zoom-in-up" data-aos-offset="100" data-aos-duration="1000"
+                data-aos-mirror="true">
+                <h1>Contact me</h1>
+                <form>
+                    <div class="input">
+                        <input type="text" id="name" name="name" placeholder="" required>
+                        <label for="name">Full name</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="email" name="email" placeholder="" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="subject" id="subject" name="subject" placeholder="" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="input textarea">
+                        <textarea type="text" id="message" name="message" placeholder="" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2023 <a href="">hamdanzull</a>. All Rights Reserved.</p>
+        <p>This website has been visited <span id="visits"></span> times. &copy; 2023 <a
+                href="https://hamdanzull.vercel.app/">hamdanzull</a> - All Rights Reserved.</p>
     </footer>
 </body>
 <script src="script/index.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
