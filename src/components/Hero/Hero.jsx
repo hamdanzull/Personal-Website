@@ -13,8 +13,12 @@ export default function Hero({ aboutToggle, handleAbout }) {
                 </div>
                 <div className='w-full md:w-[calc(100%-175px)] pt-6 md:pt-0 md:px-6'>
                     <h2 className='font-bold text-2xl'>Haloo! I'm</h2>
-                    <h3 className='font-bold text-3xl my-2'>Muh. Hamdan Zulfa</h3>
-                    <p className='mt-2 mb-4'>A beginner enthusiast exploring modern <br />tech, especially in software development.</p>
+                    <h3 className='font-bold text-3xl my-2 flex items-center gap-2'>
+                        Muh. Hamdan Zulfa
+                        <svg className='' fill="rgb(0, 149, 246)" height="24" width="24" role="img" viewBox="0 0 40 40"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"></path></svg>
+
+                    </h3>
+                    <p className='mt-2 mb-4'>A beginner enthusiast exploring modern tech, <br />especially in software development.</p>
                     <button onClick={handleAbout}
                         className='flex items-center justify-center gap-2 w-[120px] text-sm font-medium px-3 py-[3px] rounded-full border-2 text-red-500 dark:text-sky-500 border-red-500 dark:border-sky-500 active:ring ring-red-300 dark:ring-sky-800'>
                         {aboutToggle ? 'Show less' : 'Learn more'}
