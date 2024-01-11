@@ -9,7 +9,7 @@ export default function AboutPage() {
         <>
             <Header />
             <section>
-                <div className='min-h-dvh pt-5 pb-8 px-4 w-full mx-auto max-w-2xl md:px-0 lg:max-w-screen-lg'>
+                <div className='pt-5 pb-8 px-4 w-full mx-auto max-w-2xl md:px-0 lg:max-w-screen-lg'>
                     <h2 className='font-bold text-xl tracking-wide'>About Me</h2>
                     {text.map((paragraph, index) => (
                         <p key={index} className="mt-3 whitespace-pre-line">
