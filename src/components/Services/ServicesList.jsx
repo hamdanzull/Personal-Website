@@ -2,7 +2,7 @@ const services = [
     { icon: InstallationIcon, name: 'Installation', desc: 'Offering hardware and software installation (Operating Systems), applications, games, and network infrastructure.' },
     { icon: WebDevIcon, name: 'Web Development', desc: 'Crafting personalized portfolio websites, institutional sites, online stores (E-commerce), academic projects, and more.' },
     { icon: DesignIcon, name: 'Design', desc: 'Creating website or app designs & prototypes, brand logos, product designs, mockups, advertisements and more.' },
-    { icon: AutomationIcon, name: 'Automation', desc: 'Providing Telegram & WhatsApp BOT services to enhance online business services, utilizing Chromium for data scraping, and more.' },
+    { icon: AutomationIcon, name: 'Automation', desc: 'Providing Telegram & WhatsApp BOT services to enhance online business services, scraping data, and more.' },
 ]
 
 export default function ServicesList() {
