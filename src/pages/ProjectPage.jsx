@@ -23,20 +23,20 @@ const projects = [
     },
     {
         id: 2,
-        title: 'React OpenAI',
-        image: reactOpenai,
-        stacks: 'React & Tailwind CSS',
-        description: "This project marks my introduction to React as I develop a chatbot application to interact with OpenAI. It represents my first step in mastering React and enhancing my programming skills.",
-        link: 'https://openai.hamdanzull.my.id'
-    },
-    {
-        id: 3,
         title: 'Amikom Kantin',
         image: amikomKantin,
         stacks: 'PHP, CSS, JavaScript & MySQL',
         description: "Amikom Kantin represents the culmination of my semester's final project—a user-friendly web app streamlining cafeteria interactions, from menu exploration to online ordering and payments.",
         link: '/'
     },
+    {
+        id: 3,
+        title: 'React OpenAI',
+        image: reactOpenai,
+        stacks: 'React & Tailwind CSS',
+        description: "This project marks my introduction to React as I develop a chatbot application to interact with OpenAI. It represents my first step in mastering React and enhancing my programming skills.",
+        link: 'https://openai.hamdanzull.my.id'
+    }
 ]
 
 export default function ProjectPage({ visitorCount }) {
@@ -46,7 +46,7 @@ export default function ProjectPage({ visitorCount }) {
             <section >
                 <div className='pt-5 pb-8 px-4 w-full mx-auto max-w-2xl md:px-0 lg:max-w-screen-lg'>
                     <h2 className='font-bold text-xl tracking-wide'>My Projects</h2>
-                    <p className='mt-3 text-gray-500 dark:text-gray-400'>
+                    <p className='mt-3 text-gray-600 dark:text-gray-400'>
                         My projects reflect my journey in exploring various technologies and problem-solving. From web development to experimenting with data, each project is a step in my learning process. I enjoy creating user-friendly solutions that make a positive impact.
                     </p>
 
