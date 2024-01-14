@@ -1,13 +1,10 @@
-/* eslint-disable react/prop-types */
 import { text } from "../components/About/AboutContent"
 import Card from "../components/About/Card"
 import SkillsContent from "../components/About/SkillsContent"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-import Copyright from "../components/Footer/Copyright"
-import SocialIcon from "../components/Footer/SocialIcon"
 
-export default function AboutPage({ visitorCount }) {
+export default function AboutPage() {
     return (
         <>
             <Header />
@@ -29,10 +26,7 @@ export default function AboutPage({ visitorCount }) {
                     <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora molestiae praesentium delectus illum sint id et laborum ipsum quasi, ad possimus consequuntur architecto aperiam dignissimos perspiciatis quas facilis ipsam ex nostrum voluptate! Sint itaque molestiae facilis quae placeat fuga distinctio, neque illo labore nesciunt doloremque eaque, sed fugiat illum optio nemo amet maiores! Quae amet pariatur explicabo voluptatem? Quas laborum error at unde in, enim aut earum praesentium dolor, dignissimos quo a architecto eum.</p>
                 </div>
             </section>
-            <Footer>
-                <SocialIcon />
-                <Copyright visitorCount={visitorCount} />
-            </Footer>
+            <Footer />
         </>
     )
 }

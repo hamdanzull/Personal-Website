@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react'
 import MyProjects from '../components/Projects/MyProjects';
 import AboutMe from '../components/About/AboutMe';
@@ -6,10 +5,8 @@ import Services from '../components/Services/Services';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer/Footer';
-import Copyright from "../components/Footer/Copyright";
-import SocialIcon from "../components/Footer/SocialIcon";
 
-export default function HomePage({ visitorCount }) {
+export default function HomePage() {
     const [aboutToggle, setAboutToggle] = useState(false);
     const handleAbout = () => setAboutToggle(!aboutToggle);
     return (
@@ -22,10 +19,7 @@ export default function HomePage({ visitorCount }) {
             <AboutMe aboutToggle={aboutToggle} />
             <MyProjects />
             <Services />
-            <Footer>
-                <SocialIcon />
-                <Copyright visitorCount={visitorCount} />
-            </Footer>
+            <Footer />
         </>
     )
 }
