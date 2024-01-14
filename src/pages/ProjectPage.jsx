@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import ProjectList from "../components/Projects/ProjectList";
 import Thumbnail from "../components/Projects/Thumbnail";
 import ProjectDetails from "../components/Projects/ProjectDetails";
 import OpenLink from "../components/Projects/OpenLink";
+import Copyright from "../components/Footer/Copyright";
+import SocialIcon from "../components/Footer/SocialIcon";
 // project image:
 import snakeAmazon from '../assets/snake-amazon.png'
 import amikomKantin from '../assets/amikom-kantin.png'
@@ -36,7 +39,7 @@ const projects = [
     },
 ]
 
-export default function ProjectPage() {
+export default function ProjectPage({ visitorCount }) {
     return (
         <>
             <Header />
@@ -60,7 +63,10 @@ export default function ProjectPage() {
                     ))}
                 </div>
             </section>
-            <Footer />
+            <Footer>
+                <SocialIcon />
+                <Copyright visitorCount={visitorCount} />
+            </Footer>
         </>
     )
 }

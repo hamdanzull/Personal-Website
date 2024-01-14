@@ -7,15 +7,18 @@ const socials = [
 
 export default function SocialIcon() {
     return (
-        <ul className="flex gap-2">
-            {socials.map((social, idx) => (
-                <li key={idx}>
-                    <a href={social.url}>
-                        <social.icon />
-                    </a>
-                </li>
-            ))}
-        </ul>
+        <div className="flex items-center gap-2">
+            <p>Connect with me</p>
+            <ul className="flex gap-2">
+                {socials.map((social, idx) => (
+                    <li key={idx}>
+                        <a href={social.url}>
+                            <social.icon />
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
     )
 }
 
