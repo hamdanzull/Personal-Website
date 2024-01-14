@@ -12,11 +12,7 @@ ReactGA.initialize(trackingId);
 export default function App() {
 
   useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: window.location.pathname,
-      title: "Home Page"
-    });
+    ReactGA.send({ hitType: "pageview", page: "/" });
   }, [])
 
   return (
